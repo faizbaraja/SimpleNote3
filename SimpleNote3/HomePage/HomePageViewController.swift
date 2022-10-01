@@ -19,7 +19,7 @@ class HomePageViewController: UIViewController {
         registerCell()
         addRightButton()
         
-        dummyDatas = viewModel.dummyNotesData()
+        dummyDatas = DataAccess.getNote()//viewModel.dummyNotesData()
         collectionNoteList.reloadData()
         // Do any additional setup after loading the view.
     }
@@ -30,7 +30,8 @@ class HomePageViewController: UIViewController {
     }
     
     @objc func openAddNotes() {
-        
+        let addNotesVC = AddNotesViewController()
+        self.navigationController?.pushViewController(addNotesVC, animated: true)
     }
     
     private func registerCell() {
