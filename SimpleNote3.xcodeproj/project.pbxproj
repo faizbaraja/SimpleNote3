@@ -15,6 +15,9 @@
 		F48A3F8328E7E92E00BFD31C /* SimpleNote3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3F8228E7E92E00BFD31C /* SimpleNote3UITestsLaunchTests.swift */; };
 		F48A3F9228E7E98E00BFD31C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3F9028E7E98E00BFD31C /* HomePageViewController.swift */; };
 		F48A3F9328E7E98E00BFD31C /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48A3F9128E7E98E00BFD31C /* HomePageViewController.xib */; };
+		F48A3FA228E7F2E600BFD31C /* AddNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3FA028E7F2E600BFD31C /* AddNotesViewController.swift */; };
+		F48A3FA328E7F2E600BFD31C /* AddNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48A3FA128E7F2E600BFD31C /* AddNotesViewController.xib */; };
+		F48A3FA528E7F2FA00BFD31C /* AddNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3FA428E7F2FA00BFD31C /* AddNotesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F48A3F8228E7E92E00BFD31C /* SimpleNote3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNote3UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F48A3F9028E7E98E00BFD31C /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		F48A3F9128E7E98E00BFD31C /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		F48A3FA028E7F2E600BFD31C /* AddNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesViewController.swift; sourceTree = "<group>"; };
+		F48A3FA128E7F2E600BFD31C /* AddNotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNotesViewController.xib; sourceTree = "<group>"; };
+		F48A3FA428E7F2FA00BFD31C /* AddNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		F48A3F5E28E7E92C00BFD31C /* SimpleNote3 */ = {
 			isa = PBXGroup;
 			children = (
+				F48A3F9F28E7F2BB00BFD31C /* AddNotes */,
 				F48A3F8F28E7E97700BFD31C /* HomePage */,
 				F48A3F5F28E7E92C00BFD31C /* AppDelegate.swift */,
 				F48A3F6828E7E92E00BFD31C /* Assets.xcassets */,
@@ -130,6 +137,16 @@
 				F48A3F9128E7E98E00BFD31C /* HomePageViewController.xib */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		F48A3F9F28E7F2BB00BFD31C /* AddNotes */ = {
+			isa = PBXGroup;
+			children = (
+				F48A3FA028E7F2E600BFD31C /* AddNotesViewController.swift */,
+				F48A3FA128E7F2E600BFD31C /* AddNotesViewController.xib */,
+				F48A3FA428E7F2FA00BFD31C /* AddNotesViewModel.swift */,
+			);
+			path = AddNotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48A3FA328E7F2E600BFD31C /* AddNotesViewController.xib in Resources */,
 				F48A3F6C28E7E92E00BFD31C /* LaunchScreen.storyboard in Resources */,
 				F48A3F9328E7E98E00BFD31C /* HomePageViewController.xib in Resources */,
 				F48A3F6928E7E92E00BFD31C /* Assets.xcassets in Resources */,
@@ -263,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48A3FA528E7F2FA00BFD31C /* AddNotesViewModel.swift in Sources */,
 				F48A3F9228E7E98E00BFD31C /* HomePageViewController.swift in Sources */,
 				F48A3F6028E7E92C00BFD31C /* AppDelegate.swift in Sources */,
+				F48A3FA228E7F2E600BFD31C /* AddNotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
