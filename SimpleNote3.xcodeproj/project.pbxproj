@@ -15,6 +15,10 @@
 		F48A3F8328E7E92E00BFD31C /* SimpleNote3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3F8228E7E92E00BFD31C /* SimpleNote3UITestsLaunchTests.swift */; };
 		F48A3F9228E7E98E00BFD31C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3F9028E7E98E00BFD31C /* HomePageViewController.swift */; };
 		F48A3F9328E7E98E00BFD31C /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48A3F9128E7E98E00BFD31C /* HomePageViewController.xib */; };
+		F48A3F9628E7EC8000BFD31C /* NoteStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3F9528E7EC8000BFD31C /* NoteStructure.swift */; };
+		F48A3F9828E7ECC900BFD31C /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3F9728E7ECC900BFD31C /* HomePageViewModel.swift */; };
+		F48A3F9D28E7EE2E00BFD31C /* NotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3F9B28E7EE2E00BFD31C /* NotesCollectionViewCell.swift */; };
+		F48A3F9E28E7EE2E00BFD31C /* NotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48A3F9C28E7EE2E00BFD31C /* NotesCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		F48A3F8228E7E92E00BFD31C /* SimpleNote3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNote3UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F48A3F9028E7E98E00BFD31C /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		F48A3F9128E7E98E00BFD31C /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		F48A3F9528E7EC8000BFD31C /* NoteStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStructure.swift; sourceTree = "<group>"; };
+		F48A3F9728E7ECC900BFD31C /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		F48A3F9B28E7EE2E00BFD31C /* NotesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCollectionViewCell.swift; sourceTree = "<group>"; };
+		F48A3F9C28E7EE2E00BFD31C /* NotesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,8 @@
 		F48A3F5E28E7E92C00BFD31C /* SimpleNote3 */ = {
 			isa = PBXGroup;
 			children = (
+				F48A3F9928E7EDCF00BFD31C /* ReusableCells */,
+				F48A3F9428E7EC0900BFD31C /* Models */,
 				F48A3F8F28E7E97700BFD31C /* HomePage */,
 				F48A3F5F28E7E92C00BFD31C /* AppDelegate.swift */,
 				F48A3F6828E7E92E00BFD31C /* Assets.xcassets */,
@@ -128,8 +138,34 @@
 			children = (
 				F48A3F9028E7E98E00BFD31C /* HomePageViewController.swift */,
 				F48A3F9128E7E98E00BFD31C /* HomePageViewController.xib */,
+				F48A3F9728E7ECC900BFD31C /* HomePageViewModel.swift */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		F48A3F9428E7EC0900BFD31C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F48A3F9528E7EC8000BFD31C /* NoteStructure.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F48A3F9928E7EDCF00BFD31C /* ReusableCells */ = {
+			isa = PBXGroup;
+			children = (
+				F48A3F9A28E7EDE100BFD31C /* CollectionViewCells */,
+			);
+			path = ReusableCells;
+			sourceTree = "<group>";
+		};
+		F48A3F9A28E7EDE100BFD31C /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F48A3F9B28E7EE2E00BFD31C /* NotesCollectionViewCell.swift */,
+				F48A3F9C28E7EE2E00BFD31C /* NotesCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48A3F9E28E7EE2E00BFD31C /* NotesCollectionViewCell.xib in Resources */,
 				F48A3F6C28E7E92E00BFD31C /* LaunchScreen.storyboard in Resources */,
 				F48A3F9328E7E98E00BFD31C /* HomePageViewController.xib in Resources */,
 				F48A3F6928E7E92E00BFD31C /* Assets.xcassets in Resources */,
@@ -263,7 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48A3F9828E7ECC900BFD31C /* HomePageViewModel.swift in Sources */,
+				F48A3F9628E7EC8000BFD31C /* NoteStructure.swift in Sources */,
 				F48A3F9228E7E98E00BFD31C /* HomePageViewController.swift in Sources */,
+				F48A3F9D28E7EE2E00BFD31C /* NotesCollectionViewCell.swift in Sources */,
 				F48A3F6028E7E92C00BFD31C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
