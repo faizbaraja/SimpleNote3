@@ -18,6 +18,10 @@
 		F48A3FA228E7F2E600BFD31C /* AddNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3FA028E7F2E600BFD31C /* AddNotesViewController.swift */; };
 		F48A3FA328E7F2E600BFD31C /* AddNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48A3FA128E7F2E600BFD31C /* AddNotesViewController.xib */; };
 		F48A3FA528E7F2FA00BFD31C /* AddNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3FA428E7F2FA00BFD31C /* AddNotesViewModel.swift */; };
+		F48A3FA828E7F5DF00BFD31C /* NoteStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3FA728E7F5DF00BFD31C /* NoteStructure.swift */; };
+		F48A3FAB28E7F66900BFD31C /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3FAA28E7F66900BFD31C /* UserDefaultExtension.swift */; };
+		F48A3FAD28E7F67C00BFD31C /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3FAC28E7F67C00BFD31C /* Protocol.swift */; };
+		F48A3FAF28E7F69600BFD31C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A3FAE28E7F69600BFD31C /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		F48A3FA028E7F2E600BFD31C /* AddNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesViewController.swift; sourceTree = "<group>"; };
 		F48A3FA128E7F2E600BFD31C /* AddNotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNotesViewController.xib; sourceTree = "<group>"; };
 		F48A3FA428E7F2FA00BFD31C /* AddNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesViewModel.swift; sourceTree = "<group>"; };
+		F48A3FA728E7F5DF00BFD31C /* NoteStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStructure.swift; sourceTree = "<group>"; };
+		F48A3FAA28E7F66900BFD31C /* UserDefaultExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
+		F48A3FAC28E7F67C00BFD31C /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		F48A3FAE28E7F69600BFD31C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +111,16 @@
 		F48A3F5E28E7E92C00BFD31C /* SimpleNote3 */ = {
 			isa = PBXGroup;
 			children = (
+				F48A3FA928E7F65500BFD31C /* Extension */,
+				F48A3FA628E7F5CC00BFD31C /* Models */,
 				F48A3F9F28E7F2BB00BFD31C /* AddNotes */,
 				F48A3F8F28E7E97700BFD31C /* HomePage */,
 				F48A3F5F28E7E92C00BFD31C /* AppDelegate.swift */,
 				F48A3F6828E7E92E00BFD31C /* Assets.xcassets */,
 				F48A3F6A28E7E92E00BFD31C /* LaunchScreen.storyboard */,
 				F48A3F6D28E7E92E00BFD31C /* Info.plist */,
+				F48A3FAC28E7F67C00BFD31C /* Protocol.swift */,
+				F48A3FAE28E7F69600BFD31C /* Enums.swift */,
 			);
 			path = SimpleNote3;
 			sourceTree = "<group>";
@@ -147,6 +159,22 @@
 				F48A3FA428E7F2FA00BFD31C /* AddNotesViewModel.swift */,
 			);
 			path = AddNotes;
+			sourceTree = "<group>";
+		};
+		F48A3FA628E7F5CC00BFD31C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F48A3FA728E7F5DF00BFD31C /* NoteStructure.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F48A3FA928E7F65500BFD31C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F48A3FAA28E7F66900BFD31C /* UserDefaultExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +311,11 @@
 			files = (
 				F48A3FA528E7F2FA00BFD31C /* AddNotesViewModel.swift in Sources */,
 				F48A3F9228E7E98E00BFD31C /* HomePageViewController.swift in Sources */,
+				F48A3FAB28E7F66900BFD31C /* UserDefaultExtension.swift in Sources */,
+				F48A3FAD28E7F67C00BFD31C /* Protocol.swift in Sources */,
 				F48A3F6028E7E92C00BFD31C /* AppDelegate.swift in Sources */,
+				F48A3FA828E7F5DF00BFD31C /* NoteStructure.swift in Sources */,
+				F48A3FAF28E7F69600BFD31C /* Enums.swift in Sources */,
 				F48A3FA228E7F2E600BFD31C /* AddNotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
