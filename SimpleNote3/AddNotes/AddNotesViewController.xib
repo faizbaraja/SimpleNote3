@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNotesViewController" customModule="SimpleNote3" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonCategorySelector" destination="cHH-ba-QBS" id="yQN-LH-rWt"/>
+                <outlet property="textFieldDesc" destination="rZ1-1k-kfO" id="042-Iw-Nep"/>
+                <outlet property="textFieldTitle" destination="5Q6-ia-UDh" id="YeO-s6-gds"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGm-Qn-IxL">
+                    <rect key="frame" x="10" y="812" width="394" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BwQ-Mf-9dv"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Simpan"/>
+                    <connections>
+                        <action selector="actionSaveNote:" destination="-1" eventType="touchUpInside" id="tGI-Ay-Kxa"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Judul" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Q6-ia-UDh">
+                    <rect key="frame" x="10" y="54" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-ba-QBS">
+                    <rect key="frame" x="10" y="98" width="394" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Kategori"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Catatan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rZ1-1k-kfO">
+                    <rect key="frame" x="10" y="139" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Q6-ia-UDh" secondAttribute="trailing" constant="10" id="27i-oe-aAG"/>
+                <constraint firstItem="rZ1-1k-kfO" firstAttribute="trailing" secondItem="5Q6-ia-UDh" secondAttribute="trailing" id="2rf-aV-YG0"/>
+                <constraint firstItem="5Q6-ia-UDh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="6VL-TS-SaH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jGm-Qn-IxL" secondAttribute="trailing" constant="10" id="BJK-nK-pLn"/>
+                <constraint firstItem="cHH-ba-QBS" firstAttribute="top" secondItem="5Q6-ia-UDh" secondAttribute="bottom" constant="10" id="KPe-ts-KiS"/>
+                <constraint firstItem="cHH-ba-QBS" firstAttribute="trailing" secondItem="5Q6-ia-UDh" secondAttribute="trailing" id="dVc-j4-B4b"/>
+                <constraint firstItem="5Q6-ia-UDh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="f5W-uC-lqJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jGm-Qn-IxL" secondAttribute="bottom" constant="10" id="h4W-wF-Huy"/>
+                <constraint firstItem="rZ1-1k-kfO" firstAttribute="top" secondItem="cHH-ba-QBS" secondAttribute="bottom" constant="10" id="tcS-vC-b6F"/>
+                <constraint firstItem="rZ1-1k-kfO" firstAttribute="leading" secondItem="5Q6-ia-UDh" secondAttribute="leading" id="uvZ-LO-yGP"/>
+                <constraint firstItem="cHH-ba-QBS" firstAttribute="leading" secondItem="5Q6-ia-UDh" secondAttribute="leading" id="wwb-yh-DhD"/>
+                <constraint firstItem="jGm-Qn-IxL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="zHS-2q-o04"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
